@@ -1,0 +1,26 @@
+# Modules
+
+- [x] 🤸 Terminal Advanced
+- [x] 🤸 Committing Atomic Changes With Git
+- [x] 🤸 Digging Deeper Into JavaScript
+- [x] 🤸 Asynchronous JavaScript
+- [x] 🏋 Command line Todo List With Callbacks
+- [x] 🤸 HTTP Anatomy
+- [x] 🤸 HTTP Node
+- [x] 🏋 Movie Search CLI
+- [x] 🤸 Promises
+- [x] 🤸 Integration Testing With Mocha And Chai
+- [x] 🏋 Movie Search CLI with Promises
+- [ ] 🤸 Relational Database Design
+- [ ] 🤸 Defensive Programming
+- [ ] 🏋 Command Line Todo List with SQL
+- [ ] 🤸 Your First HTTP Server
+- [ ] 🤸 RESTful Routing
+- [ ] 🏋 Movie Search API
+- [ ] 🤸 Adding State to HTTP
+- [ ] 🤸 Posting Data To The Server With A Form
+- [ ] 🏋 HTTP Authentication
+- [ ] 🤸 JavaScript in the Browser
+- [ ] 🤸 Debugging with Chrome Developer Tools
+- [ ] 🤸 AJAX
+- [ ] 🏋 Movie Search Engine

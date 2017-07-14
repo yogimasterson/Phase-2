@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS todo_list;
+CREATE DATABASE todo_list;
+
+\c todo_list
+
+DROP TABLE IF EXISTS todos;
+CREATE TABLE todos(
+	id SERIAL PRIMARY KEY,
+	task VARCHAR(140) NOT NULL
+);
