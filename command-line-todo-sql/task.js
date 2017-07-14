@@ -8,7 +8,7 @@ const {
 
 const runToDoList = () => {
 	const command = process.argv[2]
-	const task = process.argv[3]
+	const taskItem = process.argv[3]
 	const updateTask = process.argv[4]
 
 	if (command === 'list') {
@@ -21,11 +21,25 @@ const runToDoList = () => {
 				process.exit(1)
 			})
 	} else if (command === 'add') {
-		add(task)
+		addQuery(taskItem)
+			.then(() => {
+				process.exit(0)
+			})
+			.catch((err) => {
+				console.log(err.message)
+				process.exit(1)
+			})
 	}	else if (command == 'delete') {
-		del(task)
+		deleteQuery(taskItem)
+			.then(() => {
+				process.exit(0)
+			})
+			.catch((err) => {
+				console.log(err.message)
+				process.exit(1)
+			})
 	} else if (command === 'update') {
-		update(task, updateTask)
+		updateQuery(taskItem, updateTask)
 	} else {
 		notFound(command)
 	}

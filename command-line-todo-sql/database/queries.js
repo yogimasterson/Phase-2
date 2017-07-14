@@ -9,8 +9,6 @@ const pgp = require('pg-promise')(options)
 const connectionString = 'postgres://localhost:5432/todo_list'
 const db = pgp(connectionString)
 
-//list
-
 const listQuery = () => {
 	return db.any('SELECT * FROM todos')
 		.then((data) => {
@@ -19,24 +17,23 @@ const listQuery = () => {
 			data.forEach((todos) => {
 				printer.print(todos.id + ' ' + todos.task)
 			})
-			printer.print('')
-			printer.print(data.length + ' tasks.')
+			printer.print('\n' + data.length + ' tasks.')
 		})
 }
 
-//add
-
-const addQuery = () => {
-
+const addQuery = (taskItem) => {
+	return db.oneOrNone('INSERT INTO todos(task) VALUES($1) RETURNING id', taskItem)
+		.then(newTask => {
+			printer.print('Created task ' + newTask.id)
+		})
 }
 
-//delete
-
-const deleteQuery = () => {
-	
+const deleteQuery = (taskItem) => {
+	return db.oneOrNone('DELETE FROM todos WHERE id = $1 RETURNING task', taskItem)
+		.then(newTask => {
+			printer.print('Completed the task ' + newTask.task)
+		})
 }
-
-//update
 
 const updateQuery = () => {
 	
