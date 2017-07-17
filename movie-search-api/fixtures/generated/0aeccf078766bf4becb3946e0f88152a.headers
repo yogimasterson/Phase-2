@@ -1,0 +1,27 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "date": "Wed, 12 Jul 2017 00:25:07 GMT",
+    "server": "Server",
+    "x-frame-options": "SAMEORIGIN",
+    "content-security-policy": "frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com",
+    "content-type": "text/html;charset=UTF-8",
+    "content-language": "en-US",
+    "vary": "Accept-Encoding,User-Agent",
+    "set-cookie": [
+      "uu=BCYmNgL8tptf-SUcT4_FARPHno6pZYqQx-p37ipbAI3GxyuhxJ6gm0AIftq3yGAuP6EUNy1JrOZp%0D%0Au038TDGodP99Y_QVbDyQQU1IkdrfO9VAYKggizmCET9pgMsLboXtgAQxuXQsY_jHfe5tE3SGVNoD%0D%0AUP3SKXDxkatqr_TKMdzFa_WI0MC4UZK4i16TuXqWNleUh8n6JgtPhjo5_rWWmXqBw5mU25AMbp6_%0D%0A00uTlglMEMuzShmdHTIOcopIIlXa2Rmm71mCUftwf0XblHHbbffNQjyadf67cDgk3Kf_5Sm1xxk%0D%0A; Domain=.imdb.com; Expires=Mon, 30-Jul-2085 03:39:14 GMT; Path=/",
+      "session-id=145-9216361-5066105; Domain=.imdb.com; Expires=Mon, 30-Jul-2085 03:39:14 GMT; Path=/",
+      "session-id-time=2130539107; Domain=.imdb.com; Expires=Mon, 30-Jul-2085 03:39:14 GMT; Path=/"
+    ],
+    "p3p": "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \"",
+    "transfer-encoding": "chunked"
+  },
+  "url": "http://www.imdb.com:80/find?ref_=nv_sr_fn&q=&s=all",
+  "time": 484,
+  "request": {
+    "method": "GET",
+    "headers": {
+      "host": "www.imdb.com"
+    }
+  }
+}

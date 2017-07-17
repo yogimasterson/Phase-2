@@ -20,6 +20,7 @@ describe('listQuery', () => {
 		sinon.stub(printer, 'print', str => {output += str})
 		return listQuery()
 			.then(() => {
+				console.log(output)
 				expect(output).to.eq(
 					'ID DESCRIPTION' +
 					'-- -----------' +
