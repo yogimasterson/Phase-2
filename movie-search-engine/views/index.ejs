@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title></title>
-		<meta charset="UTF-8">
-		<meta name="Movie Search Engine" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="style.css" rel="stylesheet">
-	</head>
-	<body>
-		<div id="title-search" class="container-fluid">
-			<h1 id="title">Movie Search Engine</h1>
-			<form action="index.html" method="post" id="search">
-				<input id="input-field" type="text" name="search" placeholder="Search for a movie ...">
-				<input type="submit">
-			</form>
+<% include ./partials/header %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h2 class="text-center">Movie Search Engine</h2>
+				<h4 id="login-text" class="text-center">Please <a href="/login">login</a> or <a href="/register">register</a></h4>
+			</div>
 		</div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</body>
-</html>
+	</div>
+<% include ./partials/footer %>

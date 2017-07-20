@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h2 class="text-center">Movie Search Engine</h2>
+				<% if (err.length > 0) { %>
+				<p class="bg-danger text-center">
+				<%= err %>
+				</p>
+				<% } %>
+				<div id="user-login">
+					<form method="get" action="/login">
+						<div id="email" class="input-group col-md-12">
+							<input type="text" name="email" class="form-control input-lg" placeholder="email@email.com" />
+						</div>
+						<div id="password" class="input-group col-md-12">
+							<input type="text" name="password" class="form-control input-lg" placeholder="password" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<% include ./partials/footer %>

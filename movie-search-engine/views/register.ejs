@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h2 class="text-center">Movie Search Engine</h2>
+				<div id="user-register">
+					<form method="post" action="/register">
+						<div id="name" class="input-group col-md-12">
+							<input type="text" name="name" class="form-control input-lg" placeholder="John Snow" />
+						</div>
+						<div id="email" class="input-group col-md-12">
+							<input type="email" name="email" class="form-control input-lg" placeholder="email@email.com" />
+						</div>
+						<div id="password" class="input-group col-md-12">
+							<input type="password" name="password" class="form-control input-lg" placeholder="password" />
+						</div>
+						<span class="input-group-btn">
+							<button class="btn btn-info btn-sm col-md-12" type="submit">
+								<i>submit</i>
+							</button>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<% include ./partials/footer %>
